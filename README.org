@@ -12,7 +12,9 @@ Specific commands to run the programs for each day are specified below.
 
 ** Day 1: SWI Prolog
 
-~nix-shell --pure --run "swipl day1.pl"~
+#+begin_src sh
+nix-shell --pure --run "swipl day1.pl"
+#+end_src
 
 ** Day 2: Clojure
 
@@ -22,8 +24,12 @@ Specific commands to run the programs for each day are specified below.
 
 ** Day 3: Elixir
 
-~nix-shell --pure --run "elixir day3.exs"~
+#+begin_src sh
+nix-shell --pure --run "elixir day3.exs"
+#+end_src
 
 ** Day 4: Elixir
 
-~nix-shell --pure --run "elixir day4.exs"~
+#+begin_src sh
+nix-shell --pure --run "elixir day4.exs"
+#+end_src
