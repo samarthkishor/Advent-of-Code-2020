@@ -40,10 +40,13 @@
 
 (defn solve
   [f]
-  (with-open [rdr (io/reader (io/resource "input.txt"))]
+  (with-open [rdr (io/reader "input.txt")]
     (count-value
      (map f (line-seq rdr))
      true)))
 
 (def part-1 (solve valid-line?))
 (def part-2 (solve new-valid-line?))
+
+(println "Part 1:" part-1)
+(println "Part 2:" part-2)

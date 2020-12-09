@@ -1,5 +1,13 @@
 :- use_module(library(pio)).
 :- set_prolog_flag(double_quotes, chars).
+:- initialization(main).
+
+main :-
+    part1(Part1),
+    part2(Part2),
+    format('Part 1: ~d~n', [Part1]),
+    format('Part 2: ~d~n', [Part2]),
+    halt(0).
 
 part1(Answer) :-
     read_file(Numbers),
@@ -40,8 +48,8 @@ token(T) -->
 
 digit(A) --> [A], { char_type(A, digit) }.
 
-token_([])     --> [].
 token_([L|Ls]) --> digit(L), token_(Ls).
+token_([])     --> [].
 
 spaces --> [].
 spaces --> space, spaces.
@@ -49,7 +57,7 @@ spaces --> space, spaces.
 space --> [S], { char_type(S, space) }.
 
 % Returns a list of tokens
-% e.g. Ts = ['1028', '1987', '1938', '1136', |...] 
+% e.g. Ts = ['1028', '1987', '1938', '1136', |...]
 tokens([])     --> [].
 tokens([T|Ts]) --> token(T), spaces, tokens(Ts).
 

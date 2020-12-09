@@ -4,7 +4,7 @@ defmodule Day4 do
   """
 
   def part1 do
-    File.stream!("./lib/input.txt")
+    File.stream!("input.txt")
     |> Stream.chunk_by(fn str -> str == "\n" end)
     |> Stream.filter(fn passport -> passport != ["\n"] end)
     |> Stream.map(fn passport -> Enum.map(passport, &String.trim/1) end)
@@ -16,7 +16,7 @@ defmodule Day4 do
   end
 
   def part2 do
-    File.stream!("./lib/input.txt")
+    File.stream!("input.txt")
     |> Stream.chunk_by(fn str -> str == "\n" end)
     |> Stream.filter(fn passport -> passport != ["\n"] end)
     |> Stream.map(fn passport -> Enum.map(passport, &String.trim/1) end)
@@ -125,3 +125,6 @@ defmodule Day4 do
       end
   end
 end
+
+IO.puts "Part 1: #{Day4.part1}"
+IO.puts "Part 2: #{Day4.part2}"

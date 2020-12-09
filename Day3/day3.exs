@@ -4,14 +4,14 @@ defmodule Day3 do
   """
 
   def part1 do
-    File.stream!("./lib/input.txt")
+    File.stream!("input.txt")
     |> Stream.map(&String.split(&1, "\n", trim: true))
     |> count_trees({3, 1})
   end
 
   def part2 do
     forest =
-      File.stream!("./lib/input.txt")
+      File.stream!("input.txt")
       |> Stream.map(&String.split(&1, "\n", trim: true))
 
     [{1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}]
@@ -45,3 +45,6 @@ defmodule Day3 do
     char == "#"
   end
 end
+
+IO.puts "Part 1: #{Day3.part1}"
+IO.puts "Part 2: #{Day3.part2}"
