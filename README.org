@@ -33,3 +33,9 @@ nix-shell --pure --run "elixir day3.exs"
 #+begin_src sh
 nix-shell --pure --run "elixir day4.exs"
 #+end_src
+
+** Day 5: SWI Prolog
+
+#+begin_src sh
+nix-shell --pure --run "swipl day5.pl"
+#+end_src
