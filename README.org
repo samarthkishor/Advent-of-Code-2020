@@ -1,0 +1,29 @@
+#+TITLE: Advent of Code 2020
+
+My solutions for Advent of Code 2020.
+
+* Installation
+
+I tried to use Nix to set up local development environments. For each day you can ~cd~ into the respective directory and use ~nix-shell~ to install all the dependencies you need. I ran into some issues with installing Clojure with Nix so this doesn't apply for the days when I used that language.
+
+Specific commands to run the programs for each day are specified below.
+
+* Solutions
+
+** Day 1: SWI Prolog
+
+~nix-shell --pure --run "swipl day1.pl"~
+
+** Day 2: Clojure
+
+- Clojure: ~clojure day2.clj~
+
+- Babashka: ~bb day2.clj~
+
+** Day 3: Elixir
+
+~nix-shell --pure --run "elixir day3.exs"~
+
+** Day 4: Elixir
+
+~nix-shell --pure --run "elixir day4.exs"~
