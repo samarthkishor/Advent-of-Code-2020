@@ -39,3 +39,9 @@ nix-shell --pure --run "elixir day4.exs"
 #+begin_src sh
 nix-shell --pure --run "swipl day5.pl"
 #+end_src
+
+** Day 6: Elixir
+
+#+begin_src sh
+nix-shell --pure --run "elixir day6.exs"
+#+end_src
