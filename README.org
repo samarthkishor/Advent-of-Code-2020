@@ -45,3 +45,9 @@ nix-shell --pure --run "swipl day5.pl"
 #+begin_src sh
 nix-shell --pure --run "elixir day6.exs"
 #+end_src
+
+** Day 7: SWI Prolog (and a bit of Python)
+
+#+begin_src sh
+nix-shell --pure --run "python3 parse.py && swipl day7.pl"
+#+end_src
