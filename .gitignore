@@ -1,2 +1,4 @@
 .envrc
 /Day7/parsed.pl
+Cargo.lock
+**/target/

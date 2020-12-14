@@ -51,3 +51,9 @@ nix-shell --pure --run "elixir day6.exs"
 #+begin_src sh
 nix-shell --pure --run "python3 parse.py && swipl day7.pl"
 #+end_src
+
+** Day 8: Rust
+
+#+begin_src sh
+nix-shell --pure --run "cargo run"
+#+end_src
