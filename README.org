@@ -57,3 +57,9 @@ nix-shell --pure --run "python3 parse.py && swipl day7.pl"
 #+begin_src sh
 nix-shell --pure --run "cargo run"
 #+end_src
+
+** Day 9: SWI Prolog
+
+#+begin_src sh
+nix-shell --pure --run "swipl day9.pl"
+#+end_src
