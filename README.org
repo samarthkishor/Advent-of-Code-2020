@@ -63,3 +63,9 @@ nix-shell --pure --run "cargo run"
 #+begin_src sh
 nix-shell --pure --run "swipl day9.pl"
 #+end_src
+
+** Day 10: SWI Prolog
+
+#+begin_src sh
+nix-shell --pure --run "swipl day10.pl"
+#+end_src
